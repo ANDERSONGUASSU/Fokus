@@ -6,7 +6,7 @@
     <title>Fokus</title>
     <link
       rel="shortcut icon"
-      href="./imagens/favicon.ico"
+      href="./img/favicon.ico"
       type="image/x-icon"
     />
     <link
@@ -29,16 +29,16 @@
     <main class="app">
       <header class="app__header">
         <figure class="app__logo-figure">
-          <img class="app__logo-image" src="./img/logo.png" alt="" />
+          <img class="app__logo-image" src="/img/logo.png" alt="" />
         </figure>
       </header>
       <section class="app__section-banner-container">
         <h1 class="app__title">
           Otimize sua produtividade,<br />
-          <strong class="app__title-strong">Mergulhe no que importa.</strong>
+          <strong class="app__title-strong">mergulhe no que importa.</strong>
         </h1>
         <figure class="app__image-figure">
-          <img src="/img/foco.png" alt="" class="app_image" />
+          <img class="app__image" src="/img/foco.png" alt="" />
         </figure>
       </section>
       <section class="app__section-card-container">
@@ -47,7 +47,7 @@
             <li class="app__card-list-item">
               <button
                 data-contexto="foco"
-                class="app__card-button app__card-button--foco"
+                class="app__card-button app__card-button--foco active"
               >
                 Foco
               </button>
@@ -74,34 +74,38 @@
             <li class="app__card-list-item">
               <label class="toggle">
                 <input
-                  type="checkbox"
                   class="toggle-checkbox"
-                  id="alterar-musica"
+                  type="checkbox"
+                  id="alternar-musica"
                 />
                 <div class="toggle-switch"></div>
               </label>
             </li>
             <li class="app__card-list-item">
-              <label for="alterar-musica" class="app__card-list-label"> Música </label>
+              <label class="app__card-list-label" for="alternar-musica">
+                Música
+              </label>
             </li>
           </ul>
           <div class="app__card-primary-button-wrapper">
-            <button class="app__card-primary-button">
+            <button id="start-pause" class="app__card-primary-button">
               <img
+                class="app__card-primary-butto-icon"
                 src="/img/play_arrow.png"
                 alt=""
-                class="app__card-primary-button-icon"
               />
               <span>Começar</span>
             </button>
           </div>
         </div>
       </section>
+
       <footer class="app__footer">
         <p class="app__footer-text">
-            Projeto fictício e sem fins comerciais. Imagens geradas por IA no Adobe Firefly.Desenvolvido por Alura. 
+          Projeto fictício e sem fins comerciais. Imagens geradas por IA no
+          Adobe Firefly.Desenvolvido por Alura.
         </p>
-    </footer>
+      </footer>
     </main>
   </body>
 </html>
